@@ -1,0 +1,27 @@
+mutation storyOfUser($arg: StoriesOfUserDto!) {
+  storyOfUser(arg: $arg){
+    id
+    caption,
+    photos {
+      id
+      path
+    }
+    likes {
+      id
+      username
+      name
+    }
+    comments{
+      id
+    }
+    author {
+      id
+      username
+      name
+      avatar {
+        id
+        path
+      }
+    }
+  }
+}

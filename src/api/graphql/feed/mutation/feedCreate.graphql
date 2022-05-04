@@ -1,0 +1,11 @@
+mutation feedCreate($feed: FeedCreateDto!) {
+  feedCreate(feed: $feed) {
+    id
+    caption
+    photos {
+      id
+      path
+    }
+    isActive
+  }
+}

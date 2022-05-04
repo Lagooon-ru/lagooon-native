@@ -1,0 +1,16 @@
+mutation allUsers {
+  allUsers {
+    id
+    name
+    username
+    avatar {
+      id
+      path
+    }
+    follow {
+      id
+      name
+      username
+    }
+  }
+}

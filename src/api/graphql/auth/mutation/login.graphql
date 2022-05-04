@@ -1,0 +1,38 @@
+mutation login($arg: LoginDto!) {
+  login(arg: $arg) {
+    access_token
+    user {
+      id
+      name
+      username
+      bio
+      email
+      emailConfirmed
+      phone
+      phoneConfirmed
+      isVerified
+      follow {
+        id
+        username
+        avatar {
+          id
+          path
+          size
+          height
+          width
+          format
+        }
+      }
+      avatar {
+        id
+        path
+        size
+        height
+        width
+        format
+      }
+      isActive
+      isArchived
+    }
+  }
+}

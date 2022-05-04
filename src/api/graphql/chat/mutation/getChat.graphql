@@ -1,0 +1,23 @@
+mutation getChat ($arg: GetChatDto!) {
+  getChat(arg: $arg) {
+    id
+    members {
+      id
+      username
+      name
+      avatar {
+        id
+      }
+    }
+    messages {
+      id
+      message
+      sender {
+        id
+        username
+        name
+      }
+      createdAt
+    }
+  }
+}

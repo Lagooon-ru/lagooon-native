@@ -1,0 +1,6 @@
+mutation feedAddComment($feed: FeedAddCommentDto!) {
+  feedAddComment(feed: $feed) {
+    id
+    createdAt
+  }
+}

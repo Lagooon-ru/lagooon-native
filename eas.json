@@ -1,0 +1,24 @@
+{
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "distribution": "internal"
+    },
+    "production": {}
+  },
+  "cli": {
+    "version": ">= 0.49.0"
+  },
+  "submit": {
+    "production": {
+      "ios": {
+        "appleId": "advenums@gmail.com",
+        "ascAppId": "1619852407",
+        "appleTeamId": "PLZZP562Y3"
+      }
+    }
+  }
+}

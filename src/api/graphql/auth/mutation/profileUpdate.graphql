@@ -1,0 +1,23 @@
+mutation profileUpdate($arg: ProfileDto!) {
+  profileUpdate(arg: $arg) {
+    id
+    name
+    username
+    bio
+    email
+    emailConfirmed
+    phone
+    phoneConfirmed
+    isVerified
+    avatar {
+      id
+      path
+      size
+      height
+      width
+      format
+    }
+    isActive
+    isArchived
+  }
+}

@@ -1,0 +1,26 @@
+mutation signup($arg: RegisterDto!) {
+  signup(arg: $arg) {
+    access_token
+    user {
+      id
+      name
+      username
+      bio
+      email
+      emailConfirmed
+      phone
+      phoneConfirmed
+      isVerified
+      avatar {
+        id
+        path
+        size
+        height
+        width
+        format
+      }
+      isActive
+      isArchived
+    }
+  }
+}

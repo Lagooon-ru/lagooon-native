@@ -1,0 +1,68 @@
+{
+  "expo": {
+    "name": "Lagooon",
+    "slug": "Lagooon",
+    "owner": "expressd3v",
+    "description": "A mobile application for people that stopped using Insta, for people that are ready to try something new!",
+    "version": "0.0.4",
+    "orientation": "portrait",
+    "icon": "./assets/images/logo.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.lagooon.lagooon",
+      "softwareKeyboardLayoutMode": "pan",
+      "permissions": [
+        "CAMERA",
+        "WRITE_EXTERNAL_STORAGE",
+        "READ_EXTERNAL_STORAGE",
+        "ACCESS_MEDIA_LOCATION"
+      ],
+      "versionCode":1
+    },
+    "ios": {
+      "bundleIdentifier": "com.lagooon.lagooon",
+      "supportsTablet": true,
+      "usesIcloudStorage": true,
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "Разрешить приложению использовать вашу галерею",
+        "NSCameraUsageDescription": "Разрешить приложению использовать камеру",
+        "NSMicrophoneUsageDescription": "Разрешить приложению использовать микрофон"
+      }
+    },
+    "web": {
+      "favicon": "./assets/images/logo.png"
+    },
+    "plugins": [
+      "sentry-expo"
+    ],
+    "hooks": {
+      "postPublish": [
+        {
+          "file": "sentry-expo/upload-sourcemaps",
+          "config": {
+            "organization": "lagooon",
+            "project": "lagooon-app",
+            "authToken": "3e28e90fb8f74b6698a442b16d7164eeedba01f4a6074c838bc2a30cce3957a0"
+          }
+        }
+      ]
+    }
+  }
+}
+

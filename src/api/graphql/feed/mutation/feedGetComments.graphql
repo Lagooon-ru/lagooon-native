@@ -1,0 +1,17 @@
+mutation feedGetComments($feed: FeedGetCommentsDto!) {
+  feedGetComments(feed: $feed) {
+    id
+    createdAt
+    updatedAt
+    author {
+      id
+      name
+      username
+      avatar {
+        id
+        path
+      }
+    }
+    comment
+  }
+}

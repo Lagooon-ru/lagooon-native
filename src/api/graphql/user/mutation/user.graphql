@@ -1,0 +1,24 @@
+mutation user($search: UserSearchDto!) {
+  user(search: $search) {
+    id
+    name
+    username
+    bio
+    email
+    phone
+    follow {
+      id
+      username
+    }
+    avatar {
+      id
+      path
+      size
+      height
+      width
+      format
+    }
+    isActive
+    isArchived
+  }
+}

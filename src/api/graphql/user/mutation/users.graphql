@@ -1,0 +1,18 @@
+mutation users($search: UsersSearchDto!) {
+  users(search: $search) {
+    pagination {
+      total
+      page
+      limit
+    }
+    data {
+      id
+      name
+      username
+      avatar {
+        id
+        path
+      }
+    }
+  }
+}

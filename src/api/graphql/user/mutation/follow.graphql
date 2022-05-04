@@ -1,0 +1,5 @@
+mutation follow($follow: FollowDto!) {
+  follow(follow: $follow) {
+    status
+  }
+}

@@ -1,0 +1,36 @@
+mutation feeds($search: FeedsSearchDto!) {
+  feeds(search: $search) {
+    pagination {
+      total
+      page
+      limit
+    }
+    data {
+      id
+      caption
+      createdAt
+      updatedAt
+      photos {
+        id
+        path
+      }
+      likes {
+        id
+        username
+        name
+      }
+      comments {
+        id
+      }
+      author {
+        id
+        username
+        name
+        avatar {
+          id
+          path
+        }
+      }
+    }
+  }
+}
